@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-info">
+            <img class="logo" src="/img/logo-mealy-03.png" alt="">
+        </div>
+        <div class="right-info">
+            <div class="wrapper">
+                <label>
+                    Email <br>
+                    <input type="text" placeholder="Nhập email của bạn" />
+                </label>
+                <label>
+                    Password <br>
+                    <input type="password" placeholder="Nhập mật khẩu của bạn" />
+                </label>
+                <label>
+                    Confirm Password <br>
+                    <input type="password" placeholder="Nhập lại mật khẩu" />
+                </label>
+                <button class="btn-signup" id="signup">Sign up</button>
+                <div class="signup-options">
+                    <span>or you can sign in with <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a> / <a href="https://accounts.google.com"><ion-icon name="logo-google"></ion-icon></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        document.getElementById("signup").onclick = function () {
+            window.location.href = "/Question 1/index.html";
+        };
+    </script>
+</body>
+</html>

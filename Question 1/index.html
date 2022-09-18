@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img class = "header-img" src="/img/logo-mealy-04.jpg" alt="Logo">
+        <ul class="header-list">
+            <li>Home</li>
+            <li>User</li>
+            <li>Support</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <h1>MEALY xin chào, chúng mình làm quen nha</h1>
+            <div class="info-box1">
+                <div class="icons">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <ion-icon name="reload-outline"></ion-icon>
+                    <ion-icon name="male-female-outline"></ion-icon>
+                    <ion-icon name="scale-outline"></ion-icon>
+                    <ion-icon name="man-outline"></ion-icon>
+                </div>
+                <div class="info-input ">
+                    <input type="text" placeholder="Nhập tên của bạn">
+                    <input type="text" placeholder="Nhập tuổi của bạn">
+                    <div class="genders">
+                        <button>Nam</button>
+                        <Button>Nữ</Button>
+                    </div>
+                    <input type="text" placeholder="Nhập cân nặng của bạn">
+                    <input type="text" placeholder="Nhập chiều cao của bạn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <dir class="next">
+        <button id="continue">Tiếp</button>
+    </dir>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        document.getElementById("continue").onclick = function () {
+            window.location.href = "/Question 2/index.html";
+        };
+    </script>
+</body>
+</html>

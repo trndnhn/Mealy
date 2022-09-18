@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    font-family: 'Montserrat', sans-serif;;
+    background: #FFCB39;
+}
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+   
+}
+.header-img {
+   width: 100px;
+    height: 50px;
+    color: #fff;
+}
+.header-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header-item {
+    padding: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+.header-item:hover .type-list {
+    display: block;
+}
+.type-list {
+    background-color: #777;
+    list-style: none;
+    margin-top: 5px;
+    width: 100px;
+    position: absolute;
+    border-radius: 7px;
+    display: none;
+}
+.navbar {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    top: -10px;
+    /* background-color: #FF3737; */
+}
+
+.type-item {
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+.type-item:hover {
+    opacity: 0.6;
+    background-color: #999;
+    color: rgba(255, 255, 255, 0.508);
+}
+
+
+
+/* container  */
+.container {
+    height:3000px;
+    margin-top: 50px;
+}
+
+.calendar {
+   
+}
+.calendar-headerbar {
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+    
+}
+.calendar-brand {
+     width: 900px;
+     height: 200px;
+     background-color: #FF3737 ;
+     margin-top: 40px;
+     margin-bottom: 50px;
+     border-radius: 25px;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+}
+.brand-head {
+   padding: 40px 50px;
+   color: rgba(255, 255, 255, 0.747);
+   font-size: 30px;
+}
+.brand-text {
+    padding-left: 50px;
+    color: rgba(255, 255, 255, 0.747);
+   font-size: 18px;
+
+}
+.brand-img {
+    height: 310px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+   transform: translateY(-60px);
+}
+.calendar-week {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+    line-height: 40px;
+
+}
+.week-list {
+    padding: 0 20px;
+    font-size: 17px;
+    border-radius: 30px;
+    margin-right: 7px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.week-list:hover {
+    animation: growth ease-in .7s;
+}
+
+.calendar-food {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.calendar-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 10px;
+    width: 200px;
+    height: 340px;
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0.686);
+
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px rgb(50, 34, 34,0.7);
+}
+.item-img {
+    left: 26px;
+    top: -50px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+.name-list {
+    padding-top: 100px;
+    list-style: none;
+}
+.name-item {
+    padding: 7px 0;
+}
+
+.item-name {
+       padding-left: 20px;
+}
+.item-calories {
+     padding-left: 20px;
+     padding-top: 5px;
+}
+.button-list {
+    display: flex;
+    list-style: none;
+    /* justify-content: */
+    padding-left: 25px;
+    padding-top: 50px;
+    
+}
+.button-item {
+    text-align:center;
+    height: 25px;
+    width: 70px;
+    line-height: 20px;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+   cursor: pointer;
+}
+
+.button-item:hover {
+    opacity: 0.7;
+}
+.calendar-icon {
+    padding-top:140px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+   
+}
+.calendar-icon:hover {
+    animation: up ease-in 0.9s;
+}
+.has--blue.active {
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(204, 204, 204, 0.457);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    display: none;
+
+}
+
+.modal.open {
+
+     display: flex; 
+}
+.modal-container {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    padding: 20px 20px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.modal-close:hover {
+    background-color: rgb(171, 90, 106,0.7);
+    box-shadow: 0px 1px 2px #ccc;
+    border-radius: 10px;
+
+}
+.modal-img {
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.365);
+}
+.modal-body {
+    padding-top: 100px;
+    display: flex;
+    
+}
+.body-head {
+
+    padding-top: -10px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.body-list-1{
+    padding-right: 30px;
+    list-style: none;
+}
+.body-list-2 {
+list-style: none;
+}
+.body-list-1 li {
+padding: 5px 10px;
+}
+.body-list-2 li {
+    padding: 5px 10px;
+}
+
+.body-footer {
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.body-icon {
+    color: red;
+}
+
+.calendar-2 {
+    margin-top: 80px;
+}
+.calendar-3 {
+    margin-top: 80px;
+}
+
+.id1 {
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+.id1:hover {
+    opacity: 0.6;
+    background-color: #999;
+    color: rgba(255, 255, 255, 0.508);
+    border-radius: 7px;
+
+}
+
+.id2 {
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+.id2:hover {
+    opacity: 0.6;
+    background-color: #999;
+    color: rgba(255, 255, 255, 0.508);
+    border-radius: 7px;
+
+}
+
+.id3 {
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+.id3:hover {
+    opacity: 0.6;
+    background-color: #999;
+    color: rgba(255, 255, 255, 0.508);
+    border-radius: 7px;
+
+}
+
+
+
+.modal-2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;  
+    /* display: flex */
+}
+.modal-container-2 {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.968);
+    width: 900px;
+    height: 550px;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+.modal-2.open-modal {
+     display: flex; 
+}
+
+.modal-header-2 {
+    /* display: flex; */
+
+   
+}
+.modal-header-2 h4 {
+    font-size: 20px;
+    padding: 10px 0;
+    margin-left: 40px;
+    line-height: 40px;
+}
+.modal-body-2 {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    padding-bottom: 20px;
+}
+.chart {
+    /* width: 200px; */
+    /* height: 300px; */
+   transform: translate(82%,8%);
+   
+}
+
+.body-2-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+
+
+}
+.content {
+  display: flex;
+  flex-direction: column;
+position: relative;
+
+}
+.content-heading {
+    padding: 10px 20px;
+}
+.menu-list {
+    list-style: none;
+    padding: 10px 20px;
+}
+.menu-item {
+    padding: 4px 0;
+}
+.item-span {
+padding-left: 40px;
+}
+
+.item-icon {
+    padding-right: 2px;
+}
+
+.modal-close-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 20px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.modal-close-2:hover {
+    background-color: rgb(171, 90, 106,0.7);
+    box-shadow: 0px 1px 2px #ccc;
+    border-top-right-radius: 20px;
+
+}
+.beamin-logo {
+    position: absolute;
+    right: -300px;
+    bottom: -100px;
+}
+.beamin-name {
+    position: absolute;
+    right: -450px;
+    bottom: 240px;
+}
+
+
+/* community */
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    
+}
+.community-chart {
+    
+    display: flex;
+    justify-content: space-between;
+}
+.chart-beside {
+    border-radius: 25px;
+    margin:20px 20px;
+    width: 280px;
+    height: 240px;
+    background-color: #fff;
+
+    
+}
+
+.small-size {
+    transform: translateY(85px);
+    width: 200px;
+    height: 140px;
+    position: relative;
+}
+.community-heading {
+    transform: translateY(60px);
+    vertical-align:middle;
+    text-align: center;
+    position: absolute;
+
+}
